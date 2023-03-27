@@ -359,7 +359,7 @@ h2 {
 
 
 @media only screen and (max-width: 600px) {
-    *{ font-size:2rem}
+    *{ font-size:.5rem}
     .magnifyIcon { width: 80px;}
     .bellIcon {width: 80px;}
     .profilepicture-small {width: 100px ; height: 100px;}
