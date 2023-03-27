@@ -13,6 +13,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    height: auto;
 }
 
 
@@ -346,7 +347,7 @@ h2 {
 
 .left-content .card {
     border-left: 10px inset goldenrod;
-    min-height:150px;
+    /* min-height:150px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -356,14 +357,19 @@ h2 {
     font-size: 0.8rem;
     color: grey;
 }
+a {
+    font-size: 1.5rem;
+}
 
 
-@media only screen and (max-width: 600px) {
-    *{ font-size:.5rem}
+
+
+/* @media only screen and (max-width: 600px) {
+    *{ font-size: }
     .magnifyIcon { width: 80px;}
     .bellIcon {width: 80px;}
     .profilepicture-small {width: 100px ; height: 100px;}
     .profilepicture-greeting {width:150px ; height: 150px;}
 
     
- }
+ } */
