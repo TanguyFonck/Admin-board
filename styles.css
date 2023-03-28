@@ -11,6 +11,7 @@
 
 html {
     height: 100%;
+
 }
 
 
@@ -19,6 +20,7 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 7fr;
     height: 100%;
+    width: 100%;
 }
 
 
@@ -30,6 +32,7 @@ header {
     grid-template-columns: 3fr 1fr;
     padding-bottom: 2rem;
     column-gap: 2rem;
+    
     
     
     
@@ -82,6 +85,7 @@ header {
 .headerBtns {
     justify-self: center;
     align-self: center;
+    padding-right: 2rem;
 }
 
 .personalInfo {
@@ -89,6 +93,7 @@ header {
     grid-template-columns: 1fr 1fr 2fr;
     
     align-items: center;
+    padding-right: 2rem;
     
 }
 
@@ -181,6 +186,7 @@ a {
     padding-left: 1rem;
     background-color: #87BBA2;
     gap: 8rem;
+    height: 100%;
     
     
     
@@ -268,9 +274,10 @@ a {
 
 .cardContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
     grid-column: 1;
     gap: 2rem;
+    grid-auto-rows: 1fr;
     
     
 }
@@ -384,9 +391,7 @@ a {
 
 
 
-@media only screen and (max-width: 600px) {
-    *{ font-size: 16px }
-    
+@media only screen and {max-width: 600px;} {
 
     
- }
+}
