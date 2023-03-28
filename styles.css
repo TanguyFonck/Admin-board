@@ -40,7 +40,7 @@ header {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding-bottom: 0rem;
-    box-shadow: inset 0px 1px 10px black;
+    box-shadow: inset 0px 7px 10px -6px rgba(0,0,0,0.75);
     
     
     
