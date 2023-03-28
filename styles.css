@@ -27,7 +27,7 @@ body {
 
 header {
     grid-column: 2;
-    background-color: #61D095;
+    background-color: #A09ABC;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding-bottom: 2rem;
@@ -43,7 +43,7 @@ header {
 
 .main-content {
     grid-column: 2;
-    background-color: #439775;
+    background-color: #D5CFE1;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding-bottom: 0rem;
@@ -60,19 +60,21 @@ header {
 
 .profilepicture-small
 {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 30px;
     justify-self: center;
+    object-fit: cover;
 }
 
 .profilepicture-greeting
 {
     width: 80px;
     height: 80px;
-    border-radius: 30px;
+    border-radius: 50px;
     justify-self: center;
     grid-row: span 2;
+    object-fit: cover;
 }
 
 .greeting {
@@ -98,7 +100,7 @@ header {
 }
 
 .magnifyIcon {
-    width: 25px;
+    width: 35px;
     justify-self: center;
     align-self: center;
 }
@@ -111,7 +113,7 @@ input {
     min-width: 75%;
     height: 2.5rem;
     align-self: center;
-    background-color: #e0f2fe;
+    background-color: ;
     border: none;
     padding-left: 5px;
     font-size: 1.5rem;
@@ -184,7 +186,7 @@ a {
     grid-row: 1/ span 3;
     flex-direction: column;
     padding-left: 1rem;
-    background-color: #87BBA2;
+    background-color: #3D3A4B;
     gap: 8rem;
     height: 100%;
     
@@ -260,8 +262,8 @@ a {
 .card {
     background-color: white;
     border-radius: 10px;
-    border: 1px solid black;
     padding: 1.5rem;
+    box-shadow: 0 3px 10px rgb( 0 0 0 / .2);
     
 
 }
@@ -274,7 +276,7 @@ a {
 
 .cardContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     grid-column: 1;
     gap: 2rem;
     grid-auto-rows: 1fr;
@@ -288,8 +290,14 @@ a {
 }
 
 #cardTrending {
-    display: flex;
-    gap: .5rem;
+    display: grid;
+    column-gap: .5rem;
+    row-gap: .5rem;
+    /* width: auto; */
+    min-width: fit-content;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
     
     
     
@@ -301,6 +309,10 @@ a {
 
 .smallbio {
     grid-column: 2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
     
     
 }
@@ -313,6 +325,7 @@ a {
 .right-content {
     padding-top: 3rem;
     padding-right: 3rem;
+    
 }
 
 .main-content {
@@ -320,19 +333,8 @@ a {
     /* height: max-content; */
 }
 
-.profilepictureContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-   
-}
 
-.bioContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
+
 
 h2 {
     padding-bottom: 1rem;
@@ -363,6 +365,9 @@ h2 {
     gap: 1rem;
     display: flex;
     flex-direction: column;
+    max-width: fit-content;
+    
+    
 }
 
 .trendingTitle {
@@ -370,7 +375,7 @@ h2 {
 }
 
 .left-content .card {
-    border-left: 10px inset goldenrod;
+    border-left: 10px inset #A09ABC;
     /* min-height:150px; */
     display: flex;
     flex-direction: column;
@@ -378,7 +383,7 @@ h2 {
 }
 
 .bio {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: grey;
 }
 a {
@@ -387,11 +392,18 @@ a {
 
 .twitterhandle {
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 
 
-@media only screen and {max-width: 600px;} {
-
-    
+@media only screen and (max-width: 600px) {
+.cardtext {
+    font-size: 1.2rem;
+}
+.cardTitle {
+    font-size: 1.2rem;
+}
+.cardSegment .cardtext {font-size: 1.2rem;
+}
 }
