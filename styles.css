@@ -21,7 +21,7 @@ body {
 
 header {
     grid-column: 2;
-    background-color: beige;
+    background-color: #61D095;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding-bottom: 2rem;
@@ -36,10 +36,11 @@ header {
 
 .main-content {
     grid-column: 2;
-    background-color: #9eb3c2;
+    background-color: #439775;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding-bottom: 0rem;
+    box-shadow: inset 0px 1px 10px black;
     
     
     
@@ -173,7 +174,7 @@ a {
     grid-row: 1/ span 3;
     flex-direction: column;
     padding-left: 1rem;
-    background-color: blueviolet;
+    background-color: #87BBA2;
     gap: 8rem;
     
     
@@ -372,11 +373,14 @@ a {
     font-size: 1.5rem;
 }
 
+.twitterhandle {
+    font-weight: bold;
+}
 
 
 
 @media only screen and (max-width: 600px) {
-    *{ font-size: 1.2rem }
+    *{ font-size: 16px }
     
 
     
